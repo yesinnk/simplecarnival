@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    android:background="@drawable/bgcas"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/MainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="697dp"
+        android:gravity="center"
+        android:text="SCORE : 0"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/missLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="663dp"
+        android:gravity="center"
+        android:text="MISSED   :   0"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="379dp"
+        android:layout_marginBottom="697dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00CC3939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/startLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="209dp"
+        android:text="Tap on the screen to Start"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/MiddleCup"
+        android:layout_width="61dp"
+        android:layout_height="114dp"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="350dp"
+        android:src="@drawable/cup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/catch_a_shape_coin"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="369dp"
+        android:src="@drawable/coin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

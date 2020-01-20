@@ -1,0 +1,333 @@
+--------------------------------------------------------------------------------------------------
+Logged:2019-12-01 by Amy
+Added java doc
+--------------------------------------------------------------------------------------------------
+Logged:2019-12-01 by Amy
+Cleaned up code and petting zoo layout.
+Added total coins, and a Textview to display whether or not you won or not.
+Total coins and total clicks now only increase when you beat a level.
+---------------------------------------------------------------------------------------------------
+Logged:2019-11-30 by Amy
+Implemented levels. Now game can save stats.
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-30T:17:02:11:112 by Evan
+Restructured the CatchAShapeViewModel class and began implementing the
+animation for the ball falling.
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-29T:12:10:11:111 by Evan
+Started restructuring of CatchAShape class by making it a child of SimpleGameController and removing
+the Handler loop set-up.
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-25T:22:20:11:111 by Yesinn
+add implementation for shuffle and movecup, now the animation plays sequentially
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-23T:15:03:11:111 by Yesinn
+add implementation for showball
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-19T:22:43:11:111 by Yesinn
+fill implementation of onGamePause and onGameSave
+add three slots for cups to be placed
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-01T:21:17 by Evan
+Added updateLevel function to CatchAShape and implemented onGameSave. Also edited onGamePause to
+kill handler.
+---------------------------------------------------------------------------------------------------
+Logged: 2019-11-01T:16:50 by Amy Chen
+Added a Timer to PettingZoo and changed the button in fragment_petting_zoo to an image
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-30T:17:14:11:111 by Yesinn
+Changed the property of the objectanimation from translationX to X
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-30T:17:02:11:111 by Yesinn
+Added the for loop back in to the shuffle method
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-30T:14:06:11:111 by Yesinn
+Modified the move method() and temporarily removed the for loop in the shuffle method
+
+Now the move ObjectAnimator.offloat() method takes two parameters. The two objects that run the
+method successfully change positions but after each method call, the value of the second parameter
+increases, causing the cups to move out of screen.
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-30T:13:38:11:111 by Yesinn
+Only one if condition was being executed in the shuffle method
+Modified the shuffle method so that the randInt gets randomized for every iteration of the for loop
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T:22:51:12:111 by Yesinn
+Removed the 2 moveCup functions and changed the parameters of move method.
+the animation.offloat() method now only takes in one value.
+The value is supposedly where the object is being animated to.
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T:22:43:12:111 by Yesinn
+Added 2 more moveCup functions, all different for the cups that move, cup12, cup23,cup13.
+
+The moveCup method still makes the cup go flying across the screen.
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-30T03:02:00.96 by Che
+Added LoginAdapter.java, LoginItemClickDelegate. Changed CreateUserFragment, UserPickerFragment,
+ControllerViewModel. Resources: Added ic_star_border_black_24db, login_back_in.png others etc..
+
+This updates completes the Login system. Users can now log in an out and create new users
+
+----------------------------------------------------------------------------------------------------
+Modified MenuAdapter, MenuFragment. BugFix - Recycler view click listeners are now only on the card
+and not on the whole view.
+
+Made recycler view feel more snappy
+----------------------------------------------------------------------------------------------------
+Added GameInfo.java. Changed CreateUserFragment, LoginFragment, UserPickerFragment, GamesFragment,
+UserState, AppRepository, ControllerViewModel, LoginViewModel
+
+Game Fragments can now save their games calling the saveGame Method. UserState is now a static
+global but will be rewritten using the Dependency Injection pattern via dagger
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T:21:53:12:111 by Yesinn
+Modified CupShuffler.move method so the cups' X positions are updated after animation
+Also added a random aspect to shuffle so that the the two cups shuffle randomly
+
+Still need to fix the shuffle method as the animations start instantly and doesn't animate the
+three movement separately.
+----------------------------------------------------------------------------------------------------
+Changed CreateUserFragment, LoginFragment, UserPickerFragment, UserState, AppRepository,
+LoginViewModel. res: fragment_login_onboard, fragment_login_user_picker, fragment_settings, strings
+
+Create A Log back in button that lets users quickly log back in. This is a temporary measure as the
+full implementation will allow users to select their specific user
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T01:20:19.711 by Che
+Added ControllerViewModel. Changed AppRepository, ControllerActivity, SetUpActivity.
+
+Moved business logic of ControllerActivity/SetUpActivity to ControllerViewModel following Clean
+Architecture's Best Practices.
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T00:51:35.825 by Che
+Changed AppInfo, AppRepository
+
+AppInfo now includes a static final in that represents the state of which a user is not logged in
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T00:43:14.272 by Che
+Added LoginFragment, UserPickerFragment, LoginViewModel, resource fragment_login_users.
+Changed CreateUserFragment ControllerActivity, SetUpActivity, Utils, resource: strings.xml
+
+Login now uses a MVVM architecture. LoginFragment manages two fragments UserPickerFragment and
+CreateUserFragment depending on the UserState of the application given by <AppInfo>.
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T00:24:11.143 by Che
+Added MinimumExperienceInstrumentedTest. Changed Gradle
+
+This update requires a gradle sync. Added a simple test class(espresso) that simulates user
+interactions.
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-29T00:15:12.426 by Che
+Added DatabaseRepository. Changed AppRepository. Fixed missing google-java-format.
+
+DatabaseRepository now inherits from Abstract DatabaseRepository
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-28T11:20 by Matthew Byra
+Added a counter a missed coins for the CatchAShape game
+I added a getMissed method, I count the missed in the HitCheck method in the CatchAShapeViewModel
+and modified the XML and binded it to the CatchAShape game fragment
+CatchAShape views.
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-28T00:10:02.765 by Evan
+
+Edited - CatchAShape.setUpView
+Edited the event listener to make the cup move the left or right side of the screen instead of
+always moving to the leftu
+
+Changed
+ - CatchAShapeViewModel
+ - CatchAShape
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T23:49:03.765 by Evan
+
+Edited - CatchAShape.setUpView, CatchAShapeViewModel.hitCheck, fragment_catch_a_shape.xml
+Added hitCheck in order to check whether the cup has collided with the coin
+
+Changed
+ - CatchAShapeViewModel
+ - CatchAShape
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T22:11:49.95 by Che
+Added RepositoryFragment and SimpleFragment, fragment_login.xml Renamed LoggingFragment to
+CreateUserFragment, Changed CreateUserFragment, GamesFragment, ControllerActivity
+
+-- Extracted SimpleFragment from GamesFragment to follow the guidelines of the Single Responsibility
+   Principle
+-- Added Repository Fragment which are Fragments that need access to the AppRepository database
+   hooks.
+-- CreateUserFragment extends RepositoryFragment to follow the guidelines of the Single
+   Responsibility Principle
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T22:31:05.765 by Evan
+
+Edited - CatchAShape.setUpView, CatchAShapeViewModel.changePos
+Added an onclick event listener in setupView so that the cup moves in response to user input.
+
+Changed
+ - CatchAShapeViewModel
+ - CatchAShape
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T20:10:07.348 by Evan
+
+Added - CatchAShapeViewModel
+I added the CatchAShapeViewModel class to handle the updating of the images
+
+Changed
+ - CatchAShape
+ - CatchAShapeViewModel
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T19:25:41.408 by Che
+Move GamesFragment.java and NavigationFragment.java from fragments to fragments.structure
+
+Changed affected 6 files as a side effect of import structure
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T19:03:56.273 by Che
+Added SetUpActivity.java, Changed Controller Activity
+
+Extracted concept of "setting up" the controller activity to align with the Single Responsibility
+Principle
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T18:20:30.524 by Che
+Re-added google-java-format
+Changed ControllerActivity, Utils, AppRepository, AppDao, AppDatabase
+Removed FragmentLoaderActivity
+
+FragmentLoaderActivity has been removed in favour of composition over inheritance.
+Now Fragment classes or other activities can easily use this class without changing their inheritance models.
+
+Minor Changes - Reformatting etc.
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T17:11:50.504 by Che
+Changed ControllerActivity
+
+Added ability for controller activity to show login screen when logged out
+and menu when logged in
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T16:53:06.05 by Che
+Added to LoginFragment res: login.png, fragment_login_onboard.xml
+Changed strings.xml
+
+Added NewUser fragment which will allow a users to create a new user
+for the application
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T16:36:22.328 by Che
+Added to persistence - UserState
+Added to viewmodels - AppRepository
+Added Utils
+
+Created a repository class as required by Room Best Practices
+
+About this commit:
+AppRepository is Database model that helps encapsulate some of the data
+binding and transactions required Database interactions. It out are focused
+provided that to views using LiveData.
+
+Utils contain multithreading helpers as required for interaction with Room
+
+UserState is a class that will help the Controller Activity and its fragments
+know which what users are available, what user is logged in etc.
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T16:08:03.458 by Che
+Added to Persistence - AppDao, AppDatabase, AppInfo, Stats, User
+
+Added The initial structure for an SQLite database using relational library Room
+There are three table models: AppInfo, Stats and User
+One Database Model: AppDatabase
+One Dao: App Dao
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T15:47:04.527 by Evan
+
+Edited fragment_catch_a_shape so that the game did not crash upon opening
+
+Changed
+ - fragment_catch_a_shape.xml
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T15:36:02.341 by Evan
+
+Added - coin.png, cup.png to drawable
+Removed methods in the CatchAShape class in order to setup structure of Catch A Coin game
+Also removed the CatchAShapeClickDelegate class, was unnecessary.
+
+Changed
+ - CatchAShapeClickDelegate
+ - CatchAShape
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-27T15:21:02.562 by Che
+Added - FragmentLoaderActivity Changed - ControllerActivity
+
+Removed method loadFragment from ControllerActivity.
+This allows for separation of concerns. ControllerActivity now
+focus on View controls and changes and FragmentLoaderActivity works on
+
+Changed
+ - fragments.menu.MenuFragment - Field recyclerView is now a local variable
+ - fragments.menu.Menu && fragments.menu.MenuAdapter
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-24T19:09:46.627 by Che
+Added colors to colors.xml, added drawables, and edited
+layouts fragment_menu and fragment_menu_recycler_item
+
+Added classes MenuViewModel
+Modified all member in package fragments.menu
+Added toast the aid with using UI
+
+Themed Menu and added menuViewModel to help manage state persistence,
+rotation bugs etc.
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-24T13:08:05.187 by Che
+Renaming
+Game1 => CreateAShape
+Game2 => CupShuffler
+Game3 => Petting Zoo
+
+All games are now in fragments.games package
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-24T12:52:53.215 by Che
+Added Classes Menu, MenuAdapter, MenuItem, MenuItemClickDelegate, UpdatedMenuFragment
+Removed Interfaces package
+
+New menu fragment uses recyclerView. Add and remove items in Menu.java
+Removed hardcoded listeners and buttons.
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-24T00:00:44.705 by Che
+
+Added App Navigation Framework
+Added NavigationFragment, SettingsFragment, Game Classes by Generic Game Names
+Added Vector arrow Icon
+Added corresponding xml layouts
+
+App navigation framework now implemented using fragments as oppose to Activities.
+This brings performance/maintainability benefits
+
+Each Team member can now work on individual parts
+
+----------------------------------------------------------------------------------------------------
+Logged: 2019-10-23T23:17:27.965 by Che
+
+Added Ability for ControllerView to add and remove fragments displayed on screen.
+Added interface for adding/removing fragments that can be used when calling getActivity
+Added A simple MenuFragment that will act as a menu in future versions
+Added A abstract GamesFragment that all future games fragment will inherit.
+Added dependency for Material Design

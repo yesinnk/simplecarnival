@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="38dp"
+    android:viewportWidth="20"
+    android:viewportHeight="38">
+
+    <group android:name="lower_slide">
+        <path
+            android:fillColor="#20308D"
+            android:pathData="M14 27 14 28 13 28 13 27 14 27 14 25 16 25 16 24 17 24 17 30 16 30 16 29.5 16 27 14 27M6 32.5 7 32.5 7 34 14 34 14 32.5 16 32.5 16 34 14 34 14 35 5 35 5 34 6 34 6 32.5" />
+
+        <path
+            android:fillColor="#3F809E"
+            android:pathData="M16 32.5 14 32.5 14 34 7 34 7 32.5 7 32 11.5 32 11.5 32.5 12 32.5 12 30.5 14 30.5 14 29.5 16 29.5 16 30 16 32.5M5 30 6 30 6 32.5 6 34 5 34 5 30" />
+
+        <path
+            android:fillColor="#7ED7CB"
+            android:pathData="M7 32.5 6 32.5 6 30 5 30 5 29 5 28 5 27 9 27 9 28 13 28 14 28 14 27 16 27 16 29.5 14 29.5 14 30.5 12 30.5 12 32.5 11.5 32.5 11.5 32 7 32 7 32.5" />
+
+        <path
+            android:fillColor="#040304"
+            android:pathData="M2 30 2 34 3 34 3 35 0 35 0 25 3 25 3 27 5 27 5 28 3 28 3 29 2 29 2 30M3 28 3 27 2 27 2 28 3 28M3 30 3 29 5 29 5 30 3 30" />
+
+        <path
+            android:fillColor="#905820"
+            android:pathData="M5 30 5 34 5 35 3 35 3 34 2 34 2 30 3 30 5 30M5 28 5 29 3 29 3 28 5 28" />
+
+        <path
+            android:fillColor="#EFC15C"
+            android:pathData="M3 30 2 30 2 29 3 29 3 30M3 27 3 28 2 28 2 27 3 27" />
+    </group>
+
+</vector>

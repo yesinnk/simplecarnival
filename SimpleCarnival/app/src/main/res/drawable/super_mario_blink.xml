@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="38dp"
+    android:viewportWidth="20"
+    android:viewportHeight="38">
+
+    <group android:name="blink_eyes">
+        <path android:fillColor="#FD716F" android:pathData="M6 9 4 9 4 8 6 8 6 9M10 10 7 10 7 8 10 8 10 10"/>
+        <path android:fillColor="#FED0BB" android:pathData="M4 9 6 9 6 11 4 11 4 9M7 10 10 10 10 11 7 11 7 10"/>
+
+        <path android:fillColor="#000" android:pathData="M4 11 6 11 6 12 4 12 4 11M7 11 10 11 10 12 7 12 7 11"/>
+    </group>
+
+</vector>

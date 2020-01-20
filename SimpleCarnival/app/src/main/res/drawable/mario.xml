@@ -1,0 +1,62 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+
+    <group android:name="back arms">
+        <path
+            android:fillColor="#CC0000"
+            android:pathData="M71 41 71 49 71 51 59 51 59 53 55 53 55 41 71 41" />
+        <path
+            android:fillColor="#F0BA8A"
+            android:pathData="M71 49 71 41 79 41 79 49 71 49" />
+        <path
+            android:pathData="M71 41 79 41 79 49 71 49 71 51 59 51 59 53 55 53 55 41 71 41M71 49 71 41"
+            android:strokeWidth="2"
+            android:strokeColor="#000000" />
+    </group>
+
+    <group android:name="hair color">
+        <path
+            android:fillColor="#280D00"
+            android:pathData="M68 12 68 10 70 10 70 12 72 12 72 14 74 14 74 16 76 16 76 20 72 20 72 18 54 18 54 22 50 22 50 26 54 26 54 30 50 30 50 32 48 32 48 30 46 30 46 24 42 24 42 26 40 26 40 22 48 22 48 20 50 20 50 18 52 18 52 16 56 16 56 14 66 14 66 12 68 12M60 30
+ 60 32 66 32 66 36 70 36 70 32 74 32 74 36 72 36 72 38 60 38 60 36 54 36 54 32 56 32 56 30 60 30" />
+    </group>
+
+    <group android:name="skin color">
+        <path
+            android:fillColor="#F0BA8A"
+            android:pathData="M46 24 46 30 48 30 48 32 50 32 50 30 54 30 54 26 50 26 50 22 54 22 54 18 72 18 72 26 74 26 74 32 70 32 70 36 66 36 66 32 60 32 60 30 56 30 56 32 54 32 54 36 60 36 60 38 68 38 68 42 54 42 54 38 48 38 48 36 42 36 42 32 40 32 40 26 42 26 42 24
+ 46 24M78 44 78 52 70 52 70 44 78 44" />
+    </group>
+
+    <group android:name="hat">
+        <path
+            android:fillColor="#CC0000"
+            android:pathData="M70 12 66 12 66 14 56 14 56 16 52 16 52 18 50 18 50 20 48 20 48 22 40 22 40 16 42 16 42 14 46 14 46 12 48 12 48 10 52 10 52 8 58 8 58 6 64 6 64 8 70 8 70 12" />
+    </group>
+
+    <group android:name="body">
+        <path
+            android:fillColor="#0055E9"
+            android:pathData="M46 36 48 36 48 38 54 38 54 42 66 42 66 58 76 58 76 74 80 74 80 80 66 80 66 70 48 70 48 66 46 66 46 36.5 46 36" />
+        <path
+            android:pathData="M46 36.5 46 66 48 66 48 70 66 70 66 80 80 80 80 74 76 74 76 58 66 58 66 42 54 42 54 38 48 38 48 36 46 36M70 40 68 40 68 42 66 42"
+            android:strokeWidth="1.4"
+            android:strokeColor="#000000" />
+    </group>
+
+    <group android:name="eyes">
+        <path
+            android:fillColor="#000000"
+            android:pathData="M62 26 60 26 60 22 62 22 62 26M68 22 68 26 66 26 66 22 68 22" />
+        <path
+            android:pathData="M62 26 60 26 60 22 62 22 62 26M68 22 68 26 66 26 66 22 68 22"
+            android:strokeWidth="1.4"
+            android:strokeColor="#000000"
+            android:strokeLineCap="square" />
+    </group>
+
+
+</vector>

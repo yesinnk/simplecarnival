@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slide_down_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_super_sky">
+
+    <ca.carnivalgames.simplecarnival.fragments.games.slide_down.level.components.LevelRecyclerView
+        android:id="@+id/slide_level_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/slide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hello" />
+
+    <ImageView
+        android:id="@+id/black_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/slide_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/digital_font"
+        android:textColor="@color/colorWhite"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="COURSE CLEARED!" />
+
+    <TextView
+        android:id="@+id/slide_coins_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:fontFamily="@font/digital_font"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Coins = 100" />
+
+    <TextView
+        android:id="@+id/slide_time_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="294dp"
+        android:fontFamily="@font/digital_font"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Time = 120" />
+
+    <TextView
+        android:id="@+id/slide_score_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="374dp"
+        android:fontFamily="@font/digital_font"
+        android:textColor="@color/colorWhite"
+        android:textSize="42sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Score = 0" />
+
+    <include layout="@layout/layout_sprite" />
+    <include layout="@layout/layout_welcome" android:id="@+id/slide_welcome"/>
+    <include android:visibility="invisible" android:id="@+id/slide_congratulations_layout" layout="@layout/layout_congratulations" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

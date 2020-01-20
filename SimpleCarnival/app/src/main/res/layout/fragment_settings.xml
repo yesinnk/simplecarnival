@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--Todo: Change id of CL -->
+<!--Todo: remove tools:ignore="HardcodedText" -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game3ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/no_saved_data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:text="Welcome $USERNAME"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_settings_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorEveningSetBlue"
+        android:elevation="1dp"
+        android:paddingVertical="15dp"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settings_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginVertical="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_welcome" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

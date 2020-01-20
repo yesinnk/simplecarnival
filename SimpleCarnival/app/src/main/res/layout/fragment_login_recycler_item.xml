@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Todo: Change id of CL -->
+<!--Todo: remove tools:ignore="HardcodedText" -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game3ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/login_user_picker_recycler_user_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="5dp"
+        app:cardBackgroundColor="@color/colorWhiteBlue"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/login_user_picker_recycler_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Che Andre" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/ic_star_border_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/a_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                tools:text="500" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:id="@+id/menu_recycler_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

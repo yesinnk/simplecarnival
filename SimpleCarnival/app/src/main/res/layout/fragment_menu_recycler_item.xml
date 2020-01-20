@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Todo: Change id of CL -->
+<!--Todo: remove tools:ignore="HardcodedText" -->
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game3ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="160dp"
+        app:cardBackgroundColor="@color/colorDarkOnSky"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menu_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:id="@+id/menu_recycler_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

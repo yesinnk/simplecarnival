@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="800dp">
+
+    <View
+        android:id="@+id/placeholder_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/placeholder_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeholder_1" />
+
+    <View
+        android:id="@+id/placeholder_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeholder_2" />
+
+    <View
+        android:id="@+id/placeholder_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/slide_r_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_1"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_1" />
+
+    <ImageView
+        android:id="@+id/slide_r_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_2"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_2"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_2" />
+
+    <ImageView
+        android:id="@+id/slide_r_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_3"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_3"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_3" />
+
+    <ImageView
+        android:id="@+id/slide_r_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_4"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_4"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_4" />
+
+
+    <ImageView
+        android:id="@+id/slide_l_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/placeholder_1"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_1" />
+
+    <ImageView
+        android:id="@+id/slide_l_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_2"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/placeholder_2"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_2" />
+
+    <ImageView
+        android:id="@+id/slide_l_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_3"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/placeholder_3"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_3" />
+
+    <ImageView
+        android:id="@+id/slide_l_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Vine"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_4"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/placeholder_4"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!--Todo: Change id of CL -->
+<!--Todo: remove tools:ignore="HardcodedText" -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game3ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/login_on_board_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login"
+        android:contentDescription="@string/background_4_people_jumping"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_on_board_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/create_a_new_user"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_on_board_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorEveningSetBlue"
+        android:elevation="1dp"
+        android:paddingVertical="15dp"
+        android:text="@string/i_m_ready"
+        android:textAllCaps="false"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_on_board_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_on_board_title_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_on_board_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_a_username" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorWhite"
+        android:paddingHorizontal="20dp"
+        android:text="@string/choose_user"
+        android:textColor="@color/colorPrimaryDarkGrey"
+        android:visibility="invisible"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

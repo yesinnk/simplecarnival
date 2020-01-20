@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sprite_on_top_vine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sprite_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sprite_hands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sprite_legs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sprite_eyes_blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/sprite_walk_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/sprite_walk_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/sprite_walk_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/sprite_peace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:alpha="0"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/sprite_hurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

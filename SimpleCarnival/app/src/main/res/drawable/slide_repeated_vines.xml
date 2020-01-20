@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/slide_vines_40"
+    android:filter="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:tileModeY="repeat"/>

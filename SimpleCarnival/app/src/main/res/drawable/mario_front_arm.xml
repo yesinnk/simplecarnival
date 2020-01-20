@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+
+    <group
+        android:name="front arms"
+        android:translateY="4">
+        <path
+            android:fillColor="#CC0000"
+            android:pathData="M71 41 71 49 71 51 59 51 59 53 55 53 55 41 71 41" />
+        <path
+            android:fillColor="#F0BA8A"
+            android:pathData="M71 49 71 41 79 41 79 49 71 49" />
+        <path
+            android:pathData="M71 41 79 41 79 49 71 49 71 51 59 51 59 53 55 53 55 41 71 41M71 49 71 41"
+            android:strokeWidth="1.4"
+            android:strokeColor="#000000" />
+    </group>
+
+
+
+</vector>
